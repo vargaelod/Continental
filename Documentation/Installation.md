@@ -51,7 +51,7 @@ CMake suite maintained and supported by Kitware (kitware.com/cmake).
 ```
 
 ## ninja
-1 Navigate to the release site: [Ninja](https://github.com/ninja-build/ninja/releases)
+1. Navigate to the release site: [Ninja](https://github.com/ninja-build/ninja/releases)
 2. Download ninja-win.zip.
 3. Extract it to any folder.
 4. Add jinja folder to system PATH.
@@ -65,3 +65,9 @@ You should see this message:
 1.12.1
 ```
 
+## ETL (Embedded Template Library)
+1. Navigate to the release site: [etl](https://github.com/ETLCPP/etl/tree/master)
+2. Clone the repo.
+3. Copy the include folder into the project root folder:
+
+- ProjectRoot/ETL/
