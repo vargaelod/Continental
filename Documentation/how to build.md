@@ -30,6 +30,8 @@ cmake --build build
 | -g      | Produce debugging information in the operating system's native format. | no | yes |
 | -O3     | Optimize yet more. -O3 turns on all optimizations specified by -O2 and also turns on the -finline-functions, -funswitch-loops, -fpredictive-commoning, -fgcse-after-reload and -ftree-vectorize options. | yes | no |
 | -flto   | Enables interprocedural optimizations across files. | yes | no |
+| -ffunction-sections | Places each function in its own section | yes | no |
+| -fdata-sections | Places each data item in its own section | yes | no |
 
 See: [Warning](https://gcc.gnu.org/onlinedocs/gcc-4.4.3/gcc/Warning-Options.html#Warning-Options)
 See: [Debugging](https://gcc.gnu.org/onlinedocs/gcc-4.4.3/gcc/Debugging-Options.html#Debugging-Options)
@@ -39,6 +41,6 @@ See: [Debugging](https://gcc.gnu.org/onlinedocs/gcc-4.4.3/gcc/Debugging-Options.
 | Name    | Description     | Release | Debug |
 |---------|-----------------|:-------:|:-----:|
 | -flto   | Enables interprocedural optimizations across files. | yes | no |
-| --gc    | Removes all unused sections. | yes | no |
+| --gc-sections | Removes all unused sections. | yes | no |
 
 See [Linker](https://gcc.gnu.org/onlinedocs/gcc/Link-Options.html)
