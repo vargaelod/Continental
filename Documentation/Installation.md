@@ -9,6 +9,7 @@ I used a Windows machine for set up the project, so I download the Windows versi
 | MYSYS | Used for compile C++ code | 15.1.0 |
 | CMAKE | Manage the build process | 4.0.2 |
 | Ninja | build system             | 1.12.1|
+| etl   | Embedded Template Library (ETL) | 20.41.5 |
 
 ## MYSYS2
 
@@ -66,8 +67,7 @@ You should see this message:
 ```
 
 ## ETL (Embedded Template Library)
-1. Navigate to the release site: [etl](https://github.com/ETLCPP/etl/tree/master)
-2. Clone the repo.
-3. Copy the include folder into the project root folder:
-
-- ProjectRoot/ETL/
+1. Call init.cmd from project root
+```
+init.cmd
+```

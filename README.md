@@ -5,3 +5,4 @@ Used tool versions:
 cmake: 3.26.3
 MinGW: 6.3.0
 ninja: 1.12.1
+etl:   20.41.5

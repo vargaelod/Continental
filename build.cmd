@@ -1,4 +1,5 @@
 @echo off
+setlocal enabledelayedexpansion
 
 set "scriptDir=%~dp0"
 set "output_path=!scriptDir!build"

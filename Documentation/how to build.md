@@ -1,25 +1,30 @@
 # How to build the project
 
-1. Navigatet to the root folder of the project.
-2. Open a cmd and run:
+1. Navigate to the root folder of the project.
+2. Open a cmd and to check out the etl library run:
+
+```
+init.cmd
+```
+**NOTE:** If etl library has been checked out this step can be skipped.
+
 
 - In case of debug:
 ```
-cmake -G "Ninja" -S . -B build
-```
-
-```
-cmake --build build
+build.cmd Debug
 ```
 
 - In case of release:
 ```
-cmake -G "Ninja" -S . -B build -DCMAKE_BUILD_TYPE=Release
+build.cmd Release
 ```
 
+- If you want to clean the output folder (you want a clean build):
 ```
-cmake --build build
+build.cmd clean
 ```
+
+**NOTE:** If you call build.cmd without or wrong argument, than a Debug build will be run.
 
 ## Compiler flags
 
@@ -34,6 +39,7 @@ cmake --build build
 | -fdata-sections | Places each data item in its own section | yes | no |
 
 See: [Warning](https://gcc.gnu.org/onlinedocs/gcc-4.4.3/gcc/Warning-Options.html#Warning-Options)
+
 See: [Debugging](https://gcc.gnu.org/onlinedocs/gcc-4.4.3/gcc/Debugging-Options.html#Debugging-Options)
 
 ## Linker flags

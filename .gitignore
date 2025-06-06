@@ -31,8 +31,11 @@
 *.out
 *.app
 
+# do not comment build folder
 build/*
-!build/.gitkeep
+
+# ETL library
+etl
 
 # local tools and files
 .vscode
