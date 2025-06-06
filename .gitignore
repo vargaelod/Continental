@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# do not comment build folder
+build/*
+
+# ETL library
+etl
+
+# local tools and files
+.vscode
