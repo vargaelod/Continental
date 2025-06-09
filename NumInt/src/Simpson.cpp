@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
+#include "Simpson.hpp"
 
 // Evaluate polynomial f(x) = a0 + a1*x + a2*x^2 + ... + an*x^n
 double evaluatePolynomial(const std::vector<double>& coeffs, double x)
@@ -59,5 +60,15 @@ int main()
     double result = simpsonsRule(coefficients, a, b, n);
     std::cout << "Approximate integral (Simpson's Rule): " << result << std::endl;
 
+    #if defined(__clang__)
+        std::cout << "Clang";
+    #elif defined(__GNUC__) || defined(__GNUG__)
+        std::cout << "GCC";
+    #elif defined(_MSC_VER)
+        std::cout << "MSVC";
+    #else
+        std::cout << "Unknown Compiler";
+    #endif
+    
     return 0;
 }
